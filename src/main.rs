@@ -291,6 +291,7 @@ fn main() {
 
     let output_opt = match (vendor, model) {
         ("System76", "addw1") => Some("eDP-1"),
+        ("Dell Inc.", "") => Some("eDP-1"),
         _ => None,
     };
 
